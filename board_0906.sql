@@ -268,3 +268,20 @@ commit;
  --삭제
 delete from ad_reply
  where a_number = '1';
+
+
+
+
+
+--업로드파일
+--테이블생성
+create table uploadfile(
+    fnumber        number(8),
+    rnumber        number(8),
+    fname           varchar2(30),
+    fsize             varchar2(10),
+    ftype            varchar2(50),
+    rid               varchar2(30),
+    fcdate          timestamp default systimestamp,
+    fudate          timestamp default systimestamp
+);
